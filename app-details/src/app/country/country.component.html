@@ -1,0 +1,16 @@
+<!-- <div class="container-fluid">
+  <div style="margin-top: 20px; background-color: powderblue;">
+    <h2>Country page content goes here</h2>
+  </div>
+  <div style="background-color: aliceblue;height: 40vh; width: 50%; overflow: scroll;">
+    <div *ngFor='let country of countryList' style="padding: 10px;">
+      <a routerLink='/details/{{country?.name}}'> {{ country?.name }} </a>
+      <a routerLink="[/home/]" fragment='{{country?.name}}'>{{ country?.name }}</a>
+    </div>
+  </div>
+</div> -->
+<div>DND of Angular CDK</div>
+<br>
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+  </div>  
