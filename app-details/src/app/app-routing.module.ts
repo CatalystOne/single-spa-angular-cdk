@@ -7,8 +7,8 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
 
 const routes: Routes = [
-  { path: 'home/anotherComponent', component: AnotherComponentComponent },
-  { path: 'home/abc', component: CountryComponent },
+  { path: 'app-details/anotherComponent', component: AnotherComponentComponent },
+  { path: 'app-details/abc', component: CountryComponent },
   { path: '**', component: EmptyRouteComponent }
 
 ];
@@ -19,7 +19,7 @@ const routes: Routes = [
   providers: [
     {
       provide: APP_BASE_HREF,
-      useValue: '/home'
+      useValue: '/'
     }
   ],
 })

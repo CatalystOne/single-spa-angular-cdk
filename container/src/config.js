@@ -4,7 +4,7 @@ import * as singleSpa from 'single-spa'
 singleSpa.registerApplication('app-navigation', () => SystemJS.import('app-navigation'), () => true);
 setTimeout(() => {
     singleSpa.registerApplication('profile', () => SystemJS.import('profile'), () => true);
-    singleSpa.registerApplication('app-details', () => SystemJS.import('app-details'), isActive.homePage);
+    singleSpa.registerApplication('app-details', () => SystemJS.import('app-details'), () => true);
 }, 500);
 
 singleSpa.start()
